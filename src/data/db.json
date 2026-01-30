@@ -1,0 +1,89 @@
+{
+  "categories": [
+    {
+      "_id": "1",
+      "name": "Mobiles",
+      "slug": "mobiles",
+      "order": 1,
+      "isActive": true
+    },
+    {
+      "_id": "2",
+      "name": "Electronics",
+      "slug": "electronics",
+      "order": 2,
+      "isActive": true
+    },
+    {
+      "_id": "3",
+      "name": "Fashion",
+      "slug": "fashion",
+      "order": 3,
+      "isActive": true
+    },
+    {
+      "_id": "4",
+      "name": "Home Appliances",
+      "slug": "home-appliances",
+      "order": 4,
+      "isActive": true
+    },
+    {
+      "_id": "5",
+      "name": "Beauty",
+      "slug": "beauty",
+      "order": 5,
+      "isActive": true
+    }
+  ],
+  "products": [
+    {
+      "title": "EVM 512GB M.2 (2242) NVMe InternalSSD - 2000MB/s Read - Ideal for Compact Machines - 5-Year Warranty (EVMNV42/512GB)",
+      "price": 299,
+      "category": "2",
+      "platform": "amazon",
+      "affiliateLink": "https://amzn.to/4k8CXAR",
+      "image": "https://m.media-amazon.com/images/I/511FoW7XiCL._SX522_.jpg",
+      "rating": 4.3,
+      "isTrending": true,
+      "isFeatured": true,
+      "clicks": 1127,
+      "createdAt": "2026-01-30T09:40:00.000Z",
+      "_id": "prod6",
+      "slug": "portronics-mouse",
+      "isActive": true
+    },
+    {
+      "title": "GEONIX 15.6\" Portable Monitor – Full HD 1080p IPS, 100% sRGB, Ultra Slim, USB-C & HDMI, Dual Speakers, Kickstand – Compatible with Laptop, Phone, PS5/Xbox – 1 Year Warranty (Black)",
+      "price": 8999,
+      "category": "2",
+      "platform": "amazon",
+      "affiliateLink": "https://amzn.to/4qaCAqR",
+      "image": "https://m.media-amazon.com/images/I/71Tk-I8P9fL._SL1500_.jpg",
+      "rating": 4,
+      "isTrending": true,
+      "isFeatured": true,
+      "_id": "1769757113640",
+      "slug": "geonix-15.6\"-portable-monitor-full-hd-1080p-ips-100percent-srgb-ultra-slim-usb-c-and-hdmi-dual-speakers-kickstand-compatible-with-laptop-phone-ps5xbox-1-year-warranty-(black)",
+      "isActive": true,
+      "clicks": 0,
+      "createdAt": "2026-01-30T07:11:53.644Z"
+    },
+    {
+      "title": "realme 126 cm (50 inch) Ultra HD (4K) LED Smart Android TV with Handsfree Voice Search and Dolby Vision & Atmos (RMV2005)",
+      "price": 29990,
+      "category": "2",
+      "platform": "flipkart",
+      "affiliateLink": "https://www.flipkart.com/realme-126-cm-50-inch-ultra-hd-4k-led-smart-android-tv-handsfree-voice-search-dolby-vision-atmos/p/itmffb77cae25999?pid=TVSG2B4A3PSFNNRX&lid=LSTTVSG2B4A3PSFNNRXTCLDW2&fm=neo%2Fmerchandising&iid=M_b1a05ad4-157a-4134-bd43-ce6b67808a60_15.ISR8ZV3SRJOD&ppt=None&ppn=None&ssid=a9lehxldr40000001769757227049&otracker=clp_omu_Televisions_3_15.dealCard.OMU_tvs-and-appliances-new-clp-store_tvs-and-appliances-new-clp-store_ISR8ZV3SRJOD_3&otracker1=clp_omu_PINNED_neo%2Fmerchandising_Televisions_NA_dealCard_cc_3_NA_view-all_3&cid=ISR8ZV3SRJOD",
+      "image": "https://rukminim2.flixcart.com/image/832/832/kosxzm80/television/5/p/e/rmv2005-realme-original-imag36hxruzv9wex.jpeg?q=70&crop=false",
+      "rating": 5,
+      "isTrending": true,
+      "isFeatured": false,
+      "_id": "1769757402196",
+      "slug": "realme-126-cm-(50-inch)-ultra-hd-(4k)-led-smart-android-tv-with-handsfree-voice-search-and-dolby-vision-and-atmos-(rmv2005)",
+      "isActive": true,
+      "clicks": 2,
+      "createdAt": "2026-01-30T07:16:42.197Z"
+    }
+  ]
+}
