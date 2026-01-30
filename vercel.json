@@ -1,8 +1,0 @@
-{
-    "framework": "nextjs",
-    "regions": [
-        "bom1"
-    ],
-    "cleanUrls": true,
-    "trailingSlash": false
-}
