@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import { Ghost, Home, ArrowLeft, Search } from 'lucide-react';
 import * as motion from 'framer-motion/client';

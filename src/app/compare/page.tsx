@@ -5,11 +5,22 @@ import Link from 'next/link';
 
 export default async function ComparePage() {
     const data = getDb();
-    const categories = data.categories.filter((c: any) => c.isActive);
-    const products = data.products.filter((p: any) => p.isActive);
 
-    const amazonProducts = products.filter((p: any) => p.platform === 'amazon');
-    const flipkartProducts = products.filter((p: any) => p.platform === 'flipkart');
+    const getProductsWithCategory = (products: any[]) => {
+        return products.map(p => {
+            const cat = data.categories.find((c: any) => c.slug === p.category || c._id === p.category);
+            return {
+                ...p,
+                category: cat ? { name: cat.name } : { name: 'Featured' }
+            };
+        });
+    };
+
+    const categories = data.categories.filter((c: any) => c.isActive);
+    const resolvedProducts = getProductsWithCategory(data.products.filter((p: any) => p.isActive));
+
+    const amazonProducts = resolvedProducts.filter((p: any) => p.platform === 'amazon');
+    const flipkartProducts = resolvedProducts.filter((p: any) => p.platform === 'flipkart');
 
     return (
         <div className="pt-32 pb-20 min-h-screen bg-zinc-950">
@@ -81,8 +92,8 @@ export default async function ComparePage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {categories.map((cat: any) => {
-                            const catAmazon = amazonProducts.filter(p => p.category === cat._id || p.category === cat.slug).length;
-                            const catFlipkart = flipkartProducts.filter(p => p.category === cat._id || p.category === cat.slug).length;
+                            const catAmazon = amazonProducts.filter((p: any) => p.category === cat._id || p.category === cat.slug || p.category?.name === cat.name).length;
+                            const catFlipkart = flipkartProducts.filter((p: any) => p.category === cat._id || p.category === cat.slug || p.category?.name === cat.name).length;
 
                             return (
                                 <Link
